@@ -2,10 +2,14 @@
 ### Language models are Few Shot learners 
 
 --> Trend towards pre-trained language representations in NLP systems, applied in increasingly flexible and task-agnostic ways for downstream transfer
-		1. single representation using word vectors
-		2. RNN with multi layer representations and context state
-		3. pre-trained recurrent or transformer models, directly fine-tuned, removing the need for task specific architectures
-while no task-specific architecture, still needs task-specific fine-tuning and datasets --> problems of specific data collection, a large model then pre-trained on a specific task may infer poorly from unseen data, can't match human's ability to perform a wide variety of language tasks based on a simple instruction or example
+		
+1. single representation using word vectors
+		
+2. RNN with multi layer representations and context state
+		
+3. pre-trained recurrent or transformer models, directly fine-tuned, removing the need for task specific architectures
+
+--> While no task-specific architecture, still needs task-specific fine-tuning and datasets --> problems of specific data collection, a large model then pre-trained on a specific task may infer poorly from unseen data, can't match human's ability to perform a wide variety of language tasks based on a simple instruction or example
 
 --> meta-learning – the model develops a broad set of skills and pattern recognition abilities at training time, and then uses those abilities at inference time to rapidly adapt to or recognize the desired task
 
@@ -54,7 +58,7 @@ Assessed on various language tasks
 
 .translation between languages  
 
-.Winograd Schema-like tasks
+.Winograd Schema-like tasks - determine which noun a pronoun refers to, when the pronoun is grammatically ambiguous but semantically unambiguous to a human
 
 .tasks involving commonsense reasoning and question answering
 
@@ -63,6 +67,8 @@ Assessed on various language tasks
 .SuperGLUE benchmark suite
 
 .NLI
+
+.common sense reasoning, e.g., PhysicalQA (PIQA) asks common sense questions about how the physical world works
 
 .additional tasks designed especially to probe in-context learning abilities – on-the-fly reasoning, adaptation skills, or open-ended text synthesis
 
@@ -76,7 +82,11 @@ for example of a bigram model we have
 
 <img src="https://user-images.githubusercontent.com/89974426/140303912-91968c07-d589-4658-a37c-ee909d9d0f40.png" width=20% height=20%>
 
+*Limitations*
 
+--> ambiguity about whether few-shot learning actually learns new tasks “from scratch” at inference time, or if it simply recognizes and identifies tasks that it has learned during training ( what about the human practitioner )
+
+--> limitations common to most deep learning systems – its decisions are not easily interpretable, it is not necessarily well-calibrated in its predictions on novel inputs as observed by the much higher variance in performance than humans on standard benchmarks, it retains the biases of the data it has been trained on
 
 
 
