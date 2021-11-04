@@ -76,17 +76,28 @@ Assessed on various language tasks
 
 *Note* - N-gram language models are making predictions based on probabilities conditional to the last n tokens, a hidden markov chain where conditional probability of next word in a sentence is described by
 
-<img src="https://user-images.githubusercontent.com/89974426/140301312-0355c543-0371-4910-aeb2-15ef0e597df2.png" width=30% height=30%>
+<img src="https://user-images.githubusercontent.com/89974426/140301312-0355c543-0371-4910-aeb2-15ef0e597df2.png" width=25% height=25%>
 
-for example of a bigram model we have
+for example for a bigram model we have <img src="https://user-images.githubusercontent.com/89974426/140303912-91968c07-d589-4658-a37c-ee909d9d0f40.png" width=20% height=20%>
 
-<img src="https://user-images.githubusercontent.com/89974426/140303912-91968c07-d589-4658-a37c-ee909d9d0f40.png" width=20% height=20%>
+which gives  
+<img src="https://user-images.githubusercontent.com/89974426/140308220-f2cc782e-30df-4eba-88bf-85360eb9b8e7.png" width=15% height=15%>
+
 
 *Limitations*
 
 --> ambiguity about whether few-shot learning actually learns new tasks “from scratch” at inference time, or if it simply recognizes and identifies tasks that it has learned during training ( what about the human practitioner )
 
 --> limitations common to most deep learning systems – its decisions are not easily interpretable, it is not necessarily well-calibrated in its predictions on novel inputs as observed by the much higher variance in performance than humans on standard benchmarks, it retains the biases of the data it has been trained on
+
+*Society*
+
+--> data bias and stereotypes
+
+--> energy usage - mitigated by developments in hardware and algorithms - the GPT-3 175B consumed several thousand petaflop/s-days of compute during pre-training
+
+<img src="https://user-images.githubusercontent.com/89974426/140307928-01e5e677-be24-4e71-9d31-9f9a7c7357ab.png" width=65% height=65%>
+
 
 
 
