@@ -16,8 +16,9 @@ while no task-specific architecture, still needs task-specific fine-tuning and d
 ![image](https://user-images.githubusercontent.com/89974426/140300401-fc55c2ec-40d9-4f8f-a567-1315cbdf03a1.png)
 
 
---> GPT-3 – 175 billion parameter autoregressive language model – for each task, we evaluate GPT-3 under 3 conditions: (a) “few-shot learning”, or in-context learning where we allow as many demonstrations as will fit into the model’s context window (typically 10 to 100), (b) “one-shot learning”, where we allow only one demonstration, and (c) “zero-shot” learning, where no demonstrations are allowed and only an instruction in natural language is given to the model. GPT-3 could also in principle be evaluated in the traditional fine-tuning setting, but we leave this to future work
-different settings (approaches) for model training
+--> GPT-3 – 175 billion parameter autoregressive language model – for each task, we evaluate GPT-3 under 3 conditions: (a) “few-shot learning”, or in-context learning where we allow as many demonstrations as will fit into the model’s context window (typically 10 to 100), (b) “one-shot learning”, where we allow only one demonstration, and (c) “zero-shot” learning, where no demonstrations are allowed and only an instruction in natural language is given to the model. 
+
+*Different settings (approaches) for model training*
 
 **(1) Fine-Tuning (FT)** has been the most common approach in recent years, and involves updating the weights of a pre-trained model by training on a supervised dataset specific to the desired task. Typically thousands to hundreds of thousands of labeled examples are used. The main advantage of fine-tuning is strong performance on many benchmarks. The main disadvantages are the need for a new large dataset for every task, the potential for poor generalization out-of-distribution [MPL19], and the potential to exploit spurious features of the training data, potentially resulting in an unfair comparison with human performance. 
 
@@ -25,18 +26,19 @@ different settings (approaches) for model training
 
 *Advantages*
 
-.need for little task-specific data 
+. need for little task-specific data 
 
-.reduced potential to learn an overly narrow distribution from a large but narrow fine-tuning dataset
-disadvantages 
+. reduced potential to learn an overly narrow distribution from a large but narrow fine-tuning dataset
 
-.much worse than state-of-the-art fine-tuned models so far
+*Disadvantages* 
 
-.a small amount of task specific data is still required
+. much worse than state-of-the-art fine-tuned models so far
 
-**(3)One-Shot (1S)**- one example given which mimics one way humans can be given language related tasks
+. a small amount of task specific data is still required
 
-**(4)Zero-Shot (0S)** – no example is allowed, only an instruction describing the task, which is the most frequent way human are given tasks
+**(3) One-Shot (1S)**- one example given which mimics one way humans can be given language related tasks
+
+**(4) Zero-Shot (0S)** – no example is allowed, only an instruction describing the task, which is the most frequent way human are given tasks
 
 *Training process*
 
@@ -66,9 +68,14 @@ Assessed on various language tasks
 
 --> Perplexity per word, assessing a language model, which is a probability distribution over sentences or text. An intrinsic measure, independent of the language task. 
 
-N-gram language models are making predictions based on probabilities conditional to the last n tokens, a hidden markov chain where conditional probability of next word in a sentence is described by
+*Note* - N-gram language models are making predictions based on probabilities conditional to the last n tokens, a hidden markov chain where conditional probability of next word in a sentence is described by
 
-![image](https://user-images.githubusercontent.com/89974426/140301312-0355c543-0371-4910-aeb2-15ef0e597df2.png)
+<img src="https://user-images.githubusercontent.com/89974426/140301312-0355c543-0371-4910-aeb2-15ef0e597df2.png" width=30% height=30%>
+
+for example of a bigram model we have
+
+<img src="https://user-images.githubusercontent.com/89974426/140303912-91968c07-d589-4658-a37c-ee909d9d0f40.png" width=20% height=20%>
+
 
 
 
