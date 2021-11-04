@@ -17,7 +17,7 @@
 
    . models needs improvement to make meta learning a viable approach, transformer language models from 100 million to 17 billion of parameters in recent years
 
-![image](https://user-images.githubusercontent.com/89974426/140300401-fc55c2ec-40d9-4f8f-a567-1315cbdf03a1.png)
+<img src="https://user-images.githubusercontent.com/89974426/140300401-fc55c2ec-40d9-4f8f-a567-1315cbdf03a1.png" width=70% height=70%>
 
 
 --> GPT-3 – 175 billion parameter autoregressive language model – for each task, we evaluate GPT-3 under 3 conditions: (a) “few-shot learning”, or in-context learning where we allow as many demonstrations as will fit into the model’s context window (typically 10 to 100), (b) “one-shot learning”, where we allow only one demonstration, and (c) “zero-shot” learning, where no demonstrations are allowed and only an instruction in natural language is given to the model. 
