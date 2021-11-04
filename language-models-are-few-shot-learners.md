@@ -78,9 +78,12 @@ Assessed on various language tasks
 
 <img src="https://user-images.githubusercontent.com/89974426/140301312-0355c543-0371-4910-aeb2-15ef0e597df2.png" width=25% height=25%>
 
-for example for a bigram model we have <img src="https://user-images.githubusercontent.com/89974426/140303912-91968c07-d589-4658-a37c-ee909d9d0f40.png" width=20% height=20%>
+for example for a bigram model we have 
+
+<img src="https://user-images.githubusercontent.com/89974426/140303912-91968c07-d589-4658-a37c-ee909d9d0f40.png" width=20% height=20%>
 
 which gives  
+
 <img src="https://user-images.githubusercontent.com/89974426/140308220-f2cc782e-30df-4eba-88bf-85360eb9b8e7.png" width=15% height=15%>
 
 
